@@ -11,7 +11,7 @@ WiFiUDP ntpUDP;
 // Set time offset for Pacific Standard Time (PST)
 // -28800 = UTC - 8 hours
 // -25200 = UTC - 7 hours
-int timeZoneOffset = -25200;
+int timeZoneOffset = -28800;
 
 NTPClient timeClient(ntpUDP, "pool.ntp.org", timeZoneOffset, 60000);  // Sync every 60 seconds
 
